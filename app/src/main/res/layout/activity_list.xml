@@ -1,22 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="120dp"
     android:orientation="horizontal"
+    android:weightSum="1"
     >
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:src=""
+        android:background="@drawable/party"
+        android:layout_weight="0.4"
+        android:layout_margin="15dp"
         />
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
 
-            android:text="555"/>
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/tvAct_topic"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="555"
+            android:layout_weight="0.2"
+            />
+        <TextView
+            android:id="@+id/tvAct_detail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="detail"
+            android:layout_weight="0.4"
+            />
+        <TextView
+            android:id="@+id/tvAct_location"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:text="location"
+            />
+        <TextView
+            android:id="@+id/tvAct_time"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:text="Time"
+            />
 
     </LinearLayout>
 </LinearLayout>
