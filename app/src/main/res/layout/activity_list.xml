@@ -17,7 +17,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="0.6"
-        android:weightSum="1"
+        android:weightSum="0.8"
         android:orientation="vertical"
         android:padding="10dp"
         >
@@ -27,13 +27,7 @@
             android:layout_height="0dp"
             android:text="555"
             android:layout_weight="0.2"
-            />
-        <TextView
-            android:id="@+id/tvAct_detail"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:text="detail"
-            android:layout_weight="0.4"
+            android:textSize="18sp"
             />
         <TextView
             android:id="@+id/tvAct_location"
@@ -48,6 +42,13 @@
             android:layout_height="0dp"
             android:layout_weight="0.2"
             android:text="Time"
+            />
+        <TextView
+            android:id="@+id/tvAct_date"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:text="Date"
             />
 
     </LinearLayout>

@@ -31,20 +31,20 @@ class ActivityAdapter(val items : ArrayList<Activity_Data>,val context:Context) 
 
 class ViewHolder(view:View):RecyclerView.ViewHolder(view) {
     var tv_topic : TextView
-    var tv_detail :TextView
+    var tv_date :TextView
     var tv_location:TextView
     var tv_time:TextView
     init {
         tv_topic = view.tvAct_topic
-        tv_detail = view.tvAct_detail
+        tv_date = view.tvAct_date
         tv_location = view.tvAct_location
         tv_time = view.tvAct_time
 
     }
     public fun setView(ad : Activity_Data){
-        tv_topic.setText(ad.activity_name.toString())
-        tv_detail.setText(ad.activity_detail.toString())
-        tv_location.setText(ad.activity_location.toString())
-        tv_time.setText(ad.activity_time.toString())
+        tv_topic.setText(ad.activity_name)
+        tv_date.setText("Date:"+ad.activity_date)
+        tv_location.setText("Location:"+ad.activity_location)
+        tv_time.setText("Time:"+ad.activity_time)
     }
 }
